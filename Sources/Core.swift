@@ -593,8 +593,8 @@ class Core: NSObject, UIGestureRecognizerDelegate {
 
     private func panningChange(with translation: CGPoint) {
         log.debug("panningChange -- translation = \(value(of: translation))")
-//        let pre = value(of: layoutAdapter.surfaceLocation)
-//        let diff = value(of: translation - initialTranslation)
+        let pre = value(of: layoutAdapter.surfaceLocation)
+        let diff = value(of: translation - initialTranslation)
 //        let next = pre + diff
         let overflow = false
 
